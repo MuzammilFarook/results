@@ -1,721 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Z2A Results</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-      <style>
-         .form-control-borderless {
-         border: none;
-         }
-         .form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-         border: none;
-         outline: none;
-         box-shadow: none;
-         }
-         .card-body {
-         padding-bottom: 12px;
-         padding-top: 12px;
-         padding-right: 12px;
-         padding-left: 12px;
-         background: #607d8b7d;
-         }
-         .src_fild {
-         border-radius: 0;
-         }
-         .src_btn {
-         line-height: 0.5;
-         height: 38px;
-         border-radius: 0;
-         }
-        
-      </style>
-      <script>
-         $( document ).ready(function() {
-         
-          $(".a656032,.a656033,.a656034,.a656035,.a656036,.a656037,.a656021,.a656022,.a656023,.a656024,.a656025,.a656026,.a656027,.a656028,.a656029,.a656030,.a656031,.a6560322").hide();
-         
-         $("#srh").click(function(){
-         var str1 = ".a";
-         
-               var x = str1+($('#reg').val());
-          $(".a656032,.a656033,.a656034,.a656035,.a656036,.a656037,.a656021,.a656022,.a656023,.a656024,.a656025,.a656026,.a656027,.a656028,.a656029,.a656030,.a656031,.a6560322").hide();
-         
-         $(x).show();
-         event.preventDefault();
-         
-         });
-         
-         });
-         
-      </script>
-   </head>
-   <body>
-      <div class="container">
-         <h2>
-            <center><b>Z2A ACADEMY</b></center>
-         </h2>
-         <div class="row" style="margin-left: 250px">
-            <div class="col-12 col-md-10 col-lg-8">
-               <form class="card card-sm">
-                  <div class="card-body row no-gutters align-items-center">
-                     <div class="col-auto">
-                        <i class="fas fa-search h4 text-body"></i>
-                     </div>
-                     <!--end of col-->
-                     <div class="col">
-                        <input id="reg" class="form-control form-control-borderless src_fild" type="search" placeholder="Search topics or keywords">
-			                                     <input class="file-upload-input1" type="file" id="poi" name="poi" onchange="readURL2(this);" accept="image/*" capture="camera"/>
+<html>
+<head>
+<title>QuaggaJS Barcode  scanner</title>
+<style id="compiled-css" type="text/css">
+      /* Scan! Button */
 
-                     </div>
-                     <!--end of col-->
-                     <div class="col-auto">
-                        <button id="srh" class="btn btn-lg btn-success src_btn" type="submit">Search</button>
-                     </div>
-                     <!--end of col-->
-                  </div>
-               </form>
-            </div>
-            <!--end of col-->
-         </div>
-         <br/><br/>
-         <table class="table table-bordered">
-            <thead>
-               <tr class="a656032">
-                  <td style=min-width:50px>NAME OF THE STUDENT </td>
-                  <td style=min-width:50px>G.GOPINATH</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656032</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 30-11-2004</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>M.HARINATH</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656033</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 07-12-2006</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>M.PRAMOTH</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656034</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 19-05-2005</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>A.P.VIMAL RAJ</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656037</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 29-01-2006</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>S.S.SANTHOSH KUMAR</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656035</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 23-11-2005</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>V.TAMILSELVI</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656036</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 29-11-2005</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px> ASHWIN IMMANUVEL.V</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656021</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 08-12-2004</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>SARANISH KUMAR.G</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>REGISTRATION NUMBER:6560322</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 26-07-2004</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>GAYATHRI.M</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656022</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 04.04.2005</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>HEMACHANDRAN.B</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656023</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 17.04.2005</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>MANIKANDAN.P</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656024</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 30-09-2005</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px> PRIYANKA SAHOO.J</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656025</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 25.07.2005</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>ROSHAN.B</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656026</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 25-11-2004</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>RUTHIKA.S</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656027</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 18-06-2005</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>SASANK.T</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656028</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 26-12-2004</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>SANJAY.M</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656029</td>
-                  <td style=min-width:50px>DATE OF BIRTH:20.01.2005 </td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>SHANMUGA SURYA.S</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656030</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 05-04-2005</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>NAME OF THE STUDENT</td>
-                  <td style=min-width:50px>SUMESH.B</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>REGISTRATION NUMBER:656031</td>
-                  <td style=min-width:50px>DATE OF BIRTH: 03-08-2004</td>
-               </tr>
-               <tr style="background-color: green;color: white;">
-                  <th>SUBJECT</th>
-                  <th>MARKS</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr class="a656032">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>62</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>90</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>80</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656032">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>372</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>78</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>91</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>83</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>90</td>
-               </tr>
-               <tr class="a656033">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>412</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>36</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>38</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>36</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>37</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>44</td>
-               </tr>
-               <tr class="a656034">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>191</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>38</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>87</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>59</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>56</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>60</td>
-               </tr>
-               <tr class="a656035">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>300</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>89</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>81</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>95</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>94</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>98</td>
-               </tr>
-               <tr class="a656036">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>457</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>45</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>61</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>52</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>SCIENCE</td>
-                  <td style=min-width:50px>57</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>SOCIAL SCIENCE</td>
-                  <td style=min-width:50px>64</td>
-               </tr>
-               <tr class="a656037">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>279</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>51</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>35</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>35</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>36</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>42</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>COMPUTER SCIENCE</td>
-                  <td style=min-width:50px>50</td>
-               </tr>
-               <tr class="a656021">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>249</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>97</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>80</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>81</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>79</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>96</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>86</td>
-               </tr>
-               <tr class="a656022">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>519</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>88</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>78</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>79</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>60</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>85</td>
-               </tr>
-               <tr class="a656023">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>460</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>99</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>61</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>66</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>46</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>87</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>67</td>
-               </tr>
-               <tr class="a656024">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>426</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>99</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>96</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>100</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>97</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>100</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>100</td>
-               </tr>
-               <tr class="a656025">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>592</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>98</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>79</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>94</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>95</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>99</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>100</td>
-               </tr>
-               <tr class="a656026">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>565</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>75</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>57</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>45</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>59</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>66</td>
-               </tr>
-               <tr class="a656027">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>372</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>92</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>72</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>62</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>64</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>83</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>92</td>
-               </tr>
-               <tr class="a656028">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>465</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>98</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>51</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>71</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>93</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>99</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>89</td>
-               </tr>
-               <tr class="a656029">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>501</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>65</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>41</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>52</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>36</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>71</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>COMPUTER SCIENCE</td>
-                  <td style=min-width:50px>87</td>
-               </tr>
-               <tr class="a656030">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>352</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>91</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>70</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>56</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>44</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>96</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>97</td>
-               </tr>
-               <tr class="a656031">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>454</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>TAMIL</td>
-                  <td style=min-width:50px>97</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>ENGLISH</td>
-                  <td style=min-width:50px>81</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>PHYSICS</td>
-                  <td style=min-width:50px>90</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>CHEMISTRY</td>
-                  <td style=min-width:50px>94</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>MATHEMATICS</td>
-                  <td style=min-width:50px>100</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>BIOLOGY</td>
-                  <td style=min-width:50px>97</td>
-               </tr>
-               <tr class="a6560322">
-                  <td style=min-width:50px>TOTAL</td>
-                  <td style=min-width:50px>559</td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-   </body>
+.icon-barcode.scan {
+    font-size: large;
+    padding: 0.5em 0.5em 0.5em 4em;
+    text-align: center;
+    display: block;
+    background-position: 0.5em center;
+}
+
+.icon-barcode.scan:before {
+    margin-right: 0.5em;
+}
+
+/* Reader Checkboxes */
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.controls .readers {
+    font-size: 1.3em;
+    margin-left: 1em;
+}
+
+.controls .readers label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.controls .readers input {
+    flex: 0 0 auto;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.controls .readers span {
+    flex: 1 1 auto;
+}
+
+/* Results */
+
+.overlay .results {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    left: 0;
+    right: 0;
+}
+
+.results {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #DDD;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding: 0.25rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid #777;
+}
+
+.results > li {
+    flex: 0 1 auto;
+    margin: 0.25rem;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.results:empty {
+    display: none;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.result > .format {
+    font-weight: bold;
+}
+
+.result > .code {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Scanner */
+
+.container .controls.hide {
+    display: none;
+}
+
+.overlay--inline {
+    display: none;
+}
+
+.overlay--inline.show {
+    display: block;
+}
+
+@media (max-width: 603px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .controls .readers {
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
+    /* EOS */
+</style>
+</head>
+<body> 
+<div class="content">
+    <button onclick="myFunction()">Click me!</button>
+
+
+<div class="wizardSteps-contract">
+<section id="container" class="container">
+ 
+    <div class="controls">
+        <button type="button" id="startScanning" class="icon-barcode button scan">Start Scanning</button>
+    
+    </div>
+    <div class="overlay overlay--inline">
+        <div class="overlay__content">
+            <div class="overlay__close">Stop Scanning</div>
+        </div>
+    </div>
+</section>
+</div>
+</div>
+<input type="text" id="bc" name="bc">
+<ul class="results" style="display: none;"></ul>
+<script src="core-lib.js"></script>
+ <script>
+      function myFunction() {
+        alert('ATB');
+		App.activateScanner();
+      }
+    </script>
+<script type="text/javascript">//<![CDATA[
+
+
+
+var Quagga = window.Quagga;
+var App = {
+    _lastResult: null,
+    init: function() {
+        this.attachListeners();
+    },
+    activateScanner: function() {
+        var scanner = this.configureScanner('.overlay__content'),
+            onDetected = function (result) {
+                this.addToResults(result);
+            }.bind(this),
+            stop = function() {
+                scanner.stop();  // should also clear all event-listeners?
+                scanner.removeEventListener('detected', onDetected);
+                this.hideOverlay();
+                this.attachListeners();
+            }.bind(this);
+
+        this.showOverlay(stop);
+        console.log("activateScanner");
+        scanner.addEventListener('detected', onDetected).start();
+    },
+    addToResults: function(result) {
+        if (this._lastResult === result.codeResult.code) {
+            return;
+        }
+        this._lastResult = result.codeResult.code;
+        var resultSets = document.querySelectorAll('ul.results');
+
+        Array.prototype.slice.call(resultSets).forEach(function(resultSet) {
+            var li = document.createElement('li'),
+                format = document.createElement('span'),
+                code = document.createElement('span');
+
+            console.log(result);
+            li.className = "result";
+            format.className = "format";
+            code.className = "code1";
+
+            li.appendChild(format);
+            li.appendChild(code);
+
+            format.appendChild(document.createTextNode(result.codeResult.format));
+            code.appendChild(document.createTextNode(result.codeResult.code));
+
+            resultSet.insertBefore(li, resultSet.firstChild);
+        });
+		
+					var codesmf = document.getElementsByClassName("code1");
+if (codesmf.length >= 0) {
+	document.getElementById("bc").value = codesmf[codesmf.length-1].innerHTML;
+}
+		
+    },
+    attachListeners: function() {
+        var button = document.querySelector('#startScanning'),
+            self = this;
+
+        button.addEventListener("click", function clickListener (e) {
+            e.preventDefault();
+			alert('cliecked');
+            button.removeEventListener("click", clickListener);
+            self.activateScanner();
+        });
+    },
+    showOverlay: function(cancelCb) {
+        document.querySelector('.container .controls')
+            .classList.add('hide');
+        document.querySelector('.overlay--inline')
+            .classList.add('show');
+        var closeButton = document.querySelector('.overlay__close');
+        closeButton.addEventListener('click', function closeHandler() {
+            closeButton.removeEventListener("click", closeHandler);
+            cancelCb();
+
+        });
+    },
+    hideOverlay: function() {
+        document.querySelector('.container .controls')
+            .classList.remove('hide');
+        document.querySelector('.overlay--inline')
+            .classList.remove('show');
+    },
+    querySelectedReaders: function() {
+        return Array.prototype.slice.call(document.querySelectorAll('.readers input[type=checkbox]'))
+            .filter(function(element) {
+                return !!element.checked;
+            })
+            .map(function(element) {
+                return element.getAttribute("name");
+            });
+    },
+    configureScanner: function(selector) {
+        var scanner = Quagga
+            .decoder({readers: this.querySelectedReaders()})
+            .locator({patchSize: 'medium'})
+            .fromSource({
+                target: selector,
+                constraints: {
+                    width: 600,
+                    height: 600,
+                    facingMode: "environment"
+                }
+            });
+        return scanner;
+    }
+};
+App.init();
+
+
+  //]]></script>
+
+
+
+</body>
 </html>
